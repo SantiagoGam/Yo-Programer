@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis servicios</title>
+    <!-- Utilidades de bootstrap -->
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+    <!-- Link de Css -->
+    <link rel="stylesheet" href="../Estilo/Estilo2.css">
+    <link rel="icon" href="../Img/Ramongus.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="BotondelaFelicidad.html">Yo | Programer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Presen">Presentación
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#NuestrosServicios">Nuestros servicios</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#Conta">¡Contactenos!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Volver a Yo | Programer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Mis servicios como programador en esta
+                                pagina</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <h1 id="Presen">Presentación</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMpydIjRorc?si=athE5xNUt2V3DsOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Nuestros servicios -->
+        <h1 id="NuestrosServicios">Servicios que ofrecemos:</h1>
+        <h3>Programas básicos en los siguientes lenguajes:</h3>
+        <div class="container text-center">
+            <!-- Primera tabla para incluir los lenguajes -->
+            <div class="row">
+              <div class="col">
+                C++
+                <img src="../Img/IconosSinFondo/C++-removebg-preview.png" alt="Imagen de C++" class="ImagendeCMas">
+              </div>
+              <div class="col">
+                Python
+                <img src="../Img/IconosSinFondo/Python-removebg-preview.png" alt="Imagen de Python" class="ImagenPiton">
+              </div>
+            </div>
+          </div>
+          <!-- Segunda tabla con una sola fila y columna para introducir las fotos de las páginas -->
+          <div class="row">
+            <div class="col2">
+                <h3>Creacion de páginas web por medio de HTML y CSS</h3>
+                <br>
+                Como la que están visualizando en este momento
+              <img src="../Img/FotoIndex.jpeg" alt="Imagen de C++" class="ImagenIndex">
+            </div> 
+    </main>
+    <footer>
+        <h2 id="Conta">¡Contactenos!</h2>
+        <div class="form-container">
+            <form class="form">
+              <div class="form-group">
+                <label for="email">Email o Correo electronico</label>
+                <input type="text" id="email" name="email" required="">
+              </div>
+              <div class="form-group">
+                <label for="textarea">¿Como podemos ayudarle?</label>
+                <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+              </div>
+              <button class="form-submit-btn" type="submit">Submit</button>
+            </form>
+          </div>   
+    <!-- Redes sociales -->
+    <h3>Nuestras redes sociales</h3> 
+    <button class="BotonWhat" onclick="window.open('https://wa.me/573206825938')">
+    Whatsapp
+    </button>
+
+    <button class="BotonIg" onclick="window.open('https://www.instagram.com/santiago._.gambino/')">
+    Instagram
+    </button>
+
+ 
+    <button class="BotonLk" onclick="window.open('https://linkedin.com/in/santiago-gambino-035972181')">
+    Linkedin
+    </button>
+
+    </footer>
+    
+
+    <!-- Link para utilidades JS -->
+    <script src="../Bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
