@@ -1,0 +1,383 @@
+/* KeyFrames o Animaciones tomadas de Webs:
+
+- Uiverse (Para el movimiento 3d del cubo)
+
+*/
+@keyframes spinner {
+    0% {
+        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+
+    50% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+
+    100% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+}
+
+@keyframes my-rotateCube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+/* Ajustes de Todo el body para que se personalice mejor de cierta forma */
+.container-fluid {
+    /* Ajustar tamaño debido a que container fluid ya trae unos predeterminados */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav{
+    background: linear-gradient(#140152 70%, #02010A 100%);
+}
+
+
+/* Ajustes para la barra de navegacion */
+nav .navbar-nav {
+    /* Centrar en el espacio determinado */
+    justify-content: center;
+    /* Que ocupen todo el espacio */
+    width: 100%;
+}
+
+/* Ajustes generales del body */
+body{
+    background-color: #140152;
+    overflow-x: hidden;
+}
+
+/* Ajustes para que la imagen del principio esté gris con un filter y luego al pasar el mouse tenga animacion y color */
+header img{
+    transform: translate(75px,0);
+    border-radius:
+    10% 50% 10% 50%/
+    50% 10% 50% 10%;
+    box-shadow: rgba(24, 0, 90, 0.8) 0px 0px 80px;
+    margin-top: 5%;
+    transition: 0.9s ease-in-out;
+    filter: grayscale(100%);
+}
+header img:hover{
+    border-radius: 50%;
+    filter: grayscale(0%);
+}
+header{
+    background: linear-gradient(#02010A 90%, #140152 100%);
+}
+header h3{
+    text-align: right;
+    transform: translate(-50px,-350px);
+    background: linear-gradient(90deg, #914deb, #f14122);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header .MiDescripcion{
+    width: 550px;
+    text-align: right;
+    transform: translate(600px,-300px);
+    color: aliceblue;
+}
+
+main{
+    background-color: #140152;
+    background: linear-gradient(#140152 90%, #4010df 100%);
+}
+main h1{
+    font-size: 100px;
+    text-align: center;
+    transform: translate(0px, 50px);
+    background: linear-gradient(90deg, #ffffff, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main p{
+    text-align: center;
+    color: aliceblue;
+    width: 330px;
+    font-size: x-large;
+}
+
+main img{
+    width: 420px;
+    height: 350px;
+    transform: translate(650px, -350px);
+    border-radius: 12px;
+    transition: 0.9s ease-in-out;
+    filter: grayscale(100%);
+}
+
+main img:hover{
+    border-radius: 50%;
+    filter: grayscale(0%);
+}
+
+/* From Uiverse.io by bhaveshxrawat */ 
+/* Animacion carta de la seccion "¿Quien soy yo?" */
+.card {
+    width: 190px;
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+  
+  .card p {
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    width: 330px;
+}
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(69, 18, 104), rgb(69, 18, 104));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+  
+
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+}  
+  
+section{
+    background-color: #4010df;
+}
+
+section h1{
+    font-size: 100px;
+    text-align: center;
+    transform: translate(0px, 50px);
+    background: linear-gradient(90deg, #000000, #000a8ff1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.LineaPrincipal{
+    transform: translate(125px, 350px);
+    /* Grosor */
+    height: 10px; 
+    background-color: #333;
+    width: 80%; 
+}
+
+footer{
+    background-color: #4010df;
+    background: linear-gradient(#4010df 90%, #ffffff  100%);
+    width: 100%;
+    height: 800px;
+}
+
+/* Ajustar los textos de semestres en la linea correspondiente */
+footer .Semestre1{
+    font-size: x-large;
+    transform: translate(130px,300px);
+}
+footer .Semestre2{
+    font-size: x-large;
+    transform: translate(400px,170px);
+}
+footer .Semestre3{
+    font-size: x-large;
+    transform: translate(680px,-65px);
+}
+footer .Semestre4{
+    font-size: x-large;
+    transform: translate(980px,-205px);
+}
+
+/* Ajuste de imagenes */
+/* Primer semestre */
+footer .ImagenPseint{
+    width: 250px;
+    height: 150px;
+    transform: translate(30px,120px);
+    transition: transform 0.5s ease;
+}
+footer .ImagenCplus{
+    width: 250px;
+    height: 150px;
+    transform: translate(-80px,130px);
+    transition: transform 0.5s ease;
+}
+
+
+/* Segundo Semestre */
+footer .ImagenPython{
+    width: 120px;
+    height: 120px;
+    transform: translate(450px,270px);
+    transition: transform 0.5s ease;
+}
+footer .ImagenCplus2{
+    width: 250px;
+    height: 150px;
+    transform: translate(160px,160px);
+    transition: transform 0.5s ease;
+}
+footer .ImagenArduino{
+    width: 170px;
+    height: 70px;
+    transform: translate(120px,160px);
+    transition: transform 0.5s ease;
+}
+
+
+/* Tercer Semestre */
+footer .ImagenCplus3{
+    width: 250px;
+    height: 150px;
+    transform: translate(700px,-240px);
+    transition: transform 0.5s ease;
+}
+footer .ImagenRedes{
+    width: 120px;
+    height: 120px;
+    transform: translate(400px,-240px);
+    transition: transform 0.5s ease;
+}
+
+
+/* Cuarto Semestre */
+footer .ImagenHyC{
+    width: 250px;
+    height: 150px;
+    transform: translate(950px,-220px);
+    transition: transform 0.5s ease;
+}
+footer .ImagenSQL{
+    width: 120px;
+    height: 120px;
+    transform: translate(700px,-100px);
+    transition: transform 0.5s ease;
+}
+footer .ImagenSketchup{
+    width: 120px;
+    height: 120px;
+    transform: translate(700px,-100px);
+    transition: transform 0.5s ease;
+}
+
+/* Efecto para las imagenes */
+footer .ImagenPseint:hover,
+footer .ImagenCplus:hover,
+footer .ImagenPython:hover,
+footer .ImagenCplus2:hover,
+footer .ImagenArduino:hover,
+footer .ImagenCplus3:hover,
+footer .ImagenRedes:hover,
+footer .ImagenHyC:hover,
+footer .ImagenSQL:hover,
+footer .ImagenSketchup:hover {
+    /* Se aumenta el tamaño para darle el efecto de zoom, sin embargo al parecer es por el comando "Transform" no se realiza totalmente  */
+  transform: scale(1.2);
+}
+
+/* From Uiverse.io by Tiagoadag */
+.card {
+    width: 350px;
+    height: 500px;
+    background-image: linear-gradient(163deg, #9900ff 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    transform: translate(150px, 110px);
+}
+
+.card2 {
+    width: 350px;
+    height: 500px;
+    background-color: #1a1a1a;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+/* De Uiverse.io por bociKond */
+.spinner {
+    width: 70.4px;
+    height: 70.4px;
+    --clr: rgb(112, 41, 204);
+    --clr-alpha: rgba(15, 12, 9, 0.1);
+    animation: spinner 1.6s infinite ease;
+    transform-style: preserve-3d;
+    position: relative; /* Cambia a 'relative' si no quieres que sea absoluto */
+    right: -850px; /* Mueve el spinner hacia la izquierda */
+    top: -250px;
+}
+
+.spinner>div {
+    background-color: var(--clr-alpha);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 3.5px solid var(--clr);
+}
+
+.spinner div:nth-of-type(1) {
+    transform: translateZ(-35.2px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+    transform: translateZ(35.2px);
+}
